@@ -1,0 +1,140 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%	Copyright (c) 2021 Jitin Nair
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[top=0.6cm, bottom=0.6cm, left=1cm, right=1cm]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{5pt}{5pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\usepackage{fontawesome5}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Arun Kumar Swami} \\[5pt]
+\href{https://github.com/arunkumar-49}{\raisebox{-0.05\height}\faGithub\ arunkumar-49} \ $|$ \
+\href{https://linkedin.com/in/arun-kumar-swami-772253294}{\raisebox{-0.05\height}\faLinkedin\ arun-kumar-swami-772253294} \ $|$ \
+\href{mailto:swamiarunkumar1@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ swamiarunkumar1@gmail.com} \ $|$ \
+\href{tel:+919887660210}{\raisebox{-0.05\height}\faMobile \ +91-9887660210} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{Indian Institute of Information Technology, Lucknow} & & \textit{Lucknow, India} \\
+\textit{Bachelor of Technology in Computer Science} & & August 2023 -- June 2027 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+% ── ChatSphere ──────────────────────────────────────────────────────────────
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{ChatSphere} & \hfill \href{https://github.com/arunkumar-49/chatsphere}{GitHub} \\[2pt]
+    \multicolumn{2}{@{}X@{}}{
+        \textit{Technologies: React, Node.js, Express, MongoDB, Socket.IO, Zustand, JWT, Multer}
+        \begin{itemize}[leftmargin=1em,itemsep=-1pt,topsep=2pt]
+            \item Architected a full-stack \textbf{Real-Time Chat Application} using the \textbf{MERN Stack} with \textbf{Socket.IO}, supporting instant messaging, typing indicators, read receipts, and live online presence across group channels and direct messages.
+            \item Engineered a scalable \textbf{RESTful API} with \textbf{Node.js} and \textbf{Express} for channel management, file uploads (\textbf{Multer}), emoji reactions, message edit/delete, and paginated message history with \textbf{MongoDB}.
+            \item Fortified user access control with \textbf{JWT} authentication, real-time email validation via \textbf{AbstractAPI}, and secure password hashing, ensuring protected routes and data integrity.
+            \item Designed a responsive \textbf{Single Page Application (SPA)} using \textbf{React} and \textbf{Zustand}, featuring dark/light mode, real-time notifications, and a premium UI with smooth micro-animations.
+        \end{itemize}
+    } \\
+\end{tabularx}
+
+\vspace{2pt}
+
+% ── Sudoku Game ──────────────────────────────────────────────────────────────
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Sudoku Game} & \hfill \href{https://github.com/arunkumar-49}{GitHub} \\[2pt]
+    \multicolumn{2}{@{}X@{}}{
+        \textit{Technologies: React, Node.js, Express, MongoDB, Tailwind CSS, JWT, Algorithms}
+        \begin{itemize}[leftmargin=1em,itemsep=-1pt,topsep=2pt]
+            \item Architected a dynamic \textbf{Sudoku Web Application} using the \textbf{MERN Stack}, featuring real-time validation and difficulty generation.
+            \item Engineered a scalable \textbf{RESTful API} with \textbf{Node.js} and \textbf{Express} to execute complex \textbf{Backtracking Algorithms} for puzzle generation and solution verification.
+            \item Fortified user access control with \textbf{JWT} authentication and secure password hashing, ensuring protected player profiles and leaderboard integrity.
+            \item Designed a responsive \textbf{Single Page Application (SPA)} using \textbf{React} and \textbf{Tailwind CSS}, featuring optimized state management for seamless gameplay.
+        \end{itemize}
+    } \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\section{Achievements}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{CodeChef Rating:} & 6 Star (Max: 2213) $|$ \href{https://www.codechef.com/}{CodeChef Profile} \\[2pt]
+\textbf{CodeForces Rating:} & Expert (Max: 1693) $|$ \href{https://codeforces.com/}{CodeForces Profile} \\[2pt]
+\textbf{LeetCode Rating:} & Guardian (Max: 2402) $|$ \href{https://leetcode.com/}{LeetCode Profile} \\[2pt]
+\textbf{Problem Solving:} & Solved over 1,000 problems across various coding platforms. \\[2pt]
+\textbf{Leetcode Achievement:} & Global Rank 120 in Weekly Contest 496 ; Global Rank 122 in BiWeekly Contest 181 ; Global Rank 120 in Weekly Contest 496 ; Global Rank 155 in Weekly Contest 498 \\[2pt]
+\textbf{Codeforces Achievement:} & Global Rank 23 (Div. 3) in Round 1084; Rank 1227 (Div. 2) in Round 1083. \\[2pt]
+\textbf{Codechef Achievement:} & Global Rank 1 (Div. 1) in Starters 225 ; Rank 12 in Starters 231 ; Rank 17 in Starters 230; Rank 24 in Starters 229 ; Rank 37 (Div. 2) in Starters 224. \\[2pt]
+\textbf{GitHub:} & More than 90 contributions on GitHub. \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0pt,label=\textbullet,itemsep=2pt,topsep=2pt,labelsep=8pt]
+  \item \textbf{Languages:} C/C++, Python, JavaScript, TypeScript, Java, SQL
+  \item \textbf{Frameworks \& Libraries:} React.js, Node.js, Express.js, Socket.IO, Zustand, Supabase, NumPy, Pandas, PyTorch
+  \item \textbf{Developer Tools:} GitHub, VS Code, Visual Studio, IntelliJ, Postman, MongoDB
+  \item \textbf{Databases:} MongoDB, MySQL, PostgreSQL
+  \item \textbf{Coursework:} Data Structures \& Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP & RESPONSIBILITY
+%----------------------------------------------------------------------------------------
+\section{Leadership \& Responsibility}
+
+\begin{tabularx}{\linewidth}{@{}p{0.38\linewidth} X@{}}
+\textbf{Core Member -- Eifer Sports Club, IIIT Lucknow} &
+Organized and managed annual sports fests with 1,000+ participants across 8 tournaments. Led a core team of 30+ student volunteers for logistics, registrations, and match-day operations. Designed competition schedules to minimize overlaps and improve participant experience. \\[4pt]
+
+\textbf{Core Member -- Entrepreneurship Cell, IIIT Lucknow} &
+Spearheaded 6 workshops including Lean Startup Bootcamp with 150+ attendees. Collaborated with industry mentors to host demo day pitches rated 90\% satisfaction. Managed branding, outreach, and post-event analysis to improve future engagement. \\
+\end{tabularx}
+
+\vfill
+\end{document}

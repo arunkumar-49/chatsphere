@@ -1,0 +1,14 @@
+const express = require('express');
+const router = express.Router();
+const { getMessages, sendMessage, editMessage, deleteMessage, reactToMessage, markAsRead, getNotifications, markNotificationsRead } = require('../controllers/messageController');
+const { protect } = require('../middleware/authMiddleware');
+const upload = require('../middleware/uploadMiddleware');
+router.get('/notifications', protect, getNotifications);
+router.put('/notifications/read', protect, markNotificationsRead);
+router.get('/:channelId', protect, getMessages);
+router.post('/:channelId', protect, upload.single('file'), sendMessage);
+router.post('/:channelId/read', protect, markAsRead);
+router.put('/:id', protect, editMessage);
+router.delete('/:id', protect, deleteMessage);
+router.post('/:id/react', protect, reactToMessage);
+module.exports = router;

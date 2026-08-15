@@ -1,0 +1,14 @@
+const express = require('express');
+const router = express.Router();
+const { getChannels, createChannel, createOrGetDM, updateChannel, addMember, getChannel, joinChannel, getPublicChannels } = require('../controllers/channelController');
+const { protect } = require('../middleware/authMiddleware');
+const upload = require('../middleware/uploadMiddleware');
+router.get('/', protect, getChannels);
+router.get('/public', protect, getPublicChannels);
+router.post('/', protect, upload.single('avatar'), createChannel);
+router.post('/dm', protect, createOrGetDM);
+router.get('/:id', protect, getChannel);
+router.put('/:id', protect, upload.single('avatar'), updateChannel);
+router.post('/:id/members', protect, addMember);
+router.post('/:id/join', protect, joinChannel);
+module.exports = router;
