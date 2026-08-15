@@ -23,3 +23,4 @@ If you want to run this project on your own machine, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/arunkumar-49/chatsphere.git
+<img width="1505" height="959" alt="image" src="https://github.com/user-attachments/assets/466d3060-437a-46f2-9414-c08a3b9de568" />
